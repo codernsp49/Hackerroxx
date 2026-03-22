@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HACKERROX | NSP Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+<body>
+<header>
+  <h1>HACKERROX</h1>
+  <p>BCA Student • Web Developer • Tool Builder</p>
+  <a href="#tools" class="btn">Explore Tools</a>
+  <a href="#contact" class="btn">Connect</a>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>I’m NSP, a BCA student who loves building mini web tools and learning coding everyday.</p>
+</section>
+
+<section id="tools">
+  <h2>ToolLab</h2>
+  <p>Interactive tools to explore and learn.</p>
+
+  <div class="tool-grid">
+
+    <!-- Password Checker -->
+    <div class="tool-card">
+      <h3>Password Strength Checker</h3>
+      <input type="password" id="pwd" placeholder="Enter password">
+      <p id="pwdResult"></p>
+    </div>
+
+    <!-- JSON Formatter -->
+    <div class="tool-card">
+      <h3>JSON Formatter</h3>
+      <textarea id="jsonInput" rows="6" placeholder="Paste JSON here"></textarea>
+      <button onclick="formatJSON()">Format</button>
+      <pre id="jsonOutput"></pre>
+    </div>
+
+    <!-- Username Checker -->
+    <div class="tool-card">
+      <h3>Username Checker</h3>
+      <input type="text" id="user" placeholder="Enter username">
+      <button onclick="checkUsername()">Check</button>
+      <div id="userResult"></div>
+    </div>
+
+    <!-- QR Code Generator -->
+    <div class="tool-card">
+      <h3>QR Code Generator</h3>
+      <input type="text" id="qrText" placeholder="Enter text or link">
+      <button onclick="generateQR()">Generate</button>
+      <img id="qrImg" style="margin-top:10px; width:100%;">
+    </div>
+
+    <!-- HTTP Status Checker -->
+    <div class="tool-card">
+      <h3>HTTP Status Checker</h3>
+      <input type="text" id="urlInput" placeholder="Enter website URL">
+      <button onclick="checkStatus()">Check</button>
+      <p id="statusResult"></p>
+    </div>
+
+    <!-- Mini Calculator -->
+    <div class="tool-card">
+      <h3>Mini Calculator</h3>
+      <input type="text" id="calcInput" placeholder="Enter expression, e.g., 2+3*5">
+      <button onclick="calculate()">Calculate</button>
+      <p id="calcResult"></p>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="contact">
+  <h2>Contact</h2>
+  <ul>
+    <li>Email: codernsp49@gmail.com</li>
+    <li>GitHub: <a href="https://github.com/codernsp49" target="_blank">codernsp49</a></li>
+  </ul>
+</section>
+
+<footer>
+  © 2026 HACKERROX | Built with ❤️
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
